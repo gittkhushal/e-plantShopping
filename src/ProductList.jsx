@@ -281,6 +281,7 @@ function ProductList({ onHomeClick }) {
     };
     return (
         <div>
+            {/* Navbar component displayed consistently on both Product Listing and Cart pages */}
             <div className="navbar" style={styleObj}>
                 <div className="tag">
                     <div className="luxury">
@@ -295,6 +296,7 @@ function ProductList({ onHomeClick }) {
 
                 </div>
                 <div style={styleObjUl}>
+                    <div> <a href="#" onClick={(e) => handleHomeClick(e)} style={styleA}>Home</a></div>
                     <div> <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>Plants</a></div>
                     <div>
                         <a href="#" onClick={(e) => handleCartClick(e)} style={styleA}>
